@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:ProductID;datatype:int,name:Model_Name;datatype:string,name:Type;datatype:string,name:Storage;datatype:string,name:Color;datatype:string,name:Price_Selling;datatype:real" />
+	<infoitem key="UD_Recordset2" value="name:ProductID;datatype:int,name:Model_Name;datatype:string,name:Type;datatype:string,name:Storage;datatype:string,name:Color;datatype:string,name:Price_Selling;datatype:real" />
+	<infoitem key="UD_Recordset3" value="name:CustomerID;datatype:int,name:Company_Name;datatype:string,name:Address;datatype:string,name:Contact_Number;datatype:string,name:Company_Email;datatype:string,name:Password;datatype:string" />
+	<infoitem key="UD_Recordset4" value="name:ProductID;datatype:int,name:Model_Name;datatype:string,name:Type;datatype:string,name:Storage;datatype:string,name:Color;datatype:string,name:Price_Selling;datatype:real" />
+	<infoitem key="UD_Customer" value="name:CustomerID;datatype:int,name:Company_Name;datatype:string,name:Address;datatype:string,name:Contact_Number;datatype:string,name:Company_Email;datatype:string,name:Password;datatype:string" />
+	<infoitem key="UD_Customerformvariable" value="name:CustomerID;datatype:int,name:Company_Name;datatype:string,name:Address;datatype:string,name:Contact_Number;datatype:string,name:Company_Email;datatype:string,name:Password;datatype:string" />
+</info>

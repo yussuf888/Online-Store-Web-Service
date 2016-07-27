@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+svg#clock {
+  display: block;
+  margin: 0 auto;
+
+  font-family: 'Lobster';
+  background-color: #0F0F0F;
+}
+
+
+#clockface {
+  fill: #222;
+}
+#marks5 use {
+  stroke: #444;
+  stroke-width: 1;
+}
+#marks5 use:first-child {
+  stroke: #FFF;
+}
+#date-display rect {
+  stroke: #444;
+  stroke-width: 1;
+}
+#date-display text {
+  fill: #444;
+  font-size: 0.35em;
+}
+
+#hand line, #mark-minute {
+  stroke-linecap: round;
+}
+
+#hand {
+  fill: #FFF;
+  stroke: #FFF;
+}
+#hour-hand {
+  stroke-width: 4;
+  transform: scale(0.6);
+  animation: animate-hours 86400s linear infinite;
+}
+#minute-hand {
+  stroke-width: 2;
+  animation: animate-minutes 3600s linear infinite;
+}
+#second-hand {
+  stroke-width: 1;
+  transform: scale(1.1);
+  animation: animate-seconds 60s steps(60) infinite;
+}
+
+
+/* Animations */
+
+@keyframes animate-hours {
+  from {
+    transform: scale(0.6) rotate(0deg);
+  }
+  to {
+    transform: scale(0.6) rotate(360deg);
+  }
+}
+@keyframes animate-minutes {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-seconds {
+  from {
+    transform: scale(1.1) rotate(0deg);
+  }
+  to {
+    transform: scale(1.1) rotate(360deg);
+  }
+}

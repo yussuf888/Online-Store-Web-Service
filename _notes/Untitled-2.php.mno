@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:OrderID;datatype:int,name:CustomerID;datatype:int,name:ProductID;datatype:int,name:Model_Name;datatype:string,name:Quantity;datatype:int,name:Price;datatype:real,name:Price_Total;datatype:real,name:Total;datatype:real,name:Company_Name;datatype:string,name:Company_Email;datatype:string" />
+	<infoitem key="UD_Recordset2" value="name:OrderProductID;datatype:int,name:OrderID;datatype:int,name:CustomerID;datatype:int,name:ProductID;datatype:int,name:Quantity;datatype:int,name:Price;datatype:real,name:Price_Total;datatype:real" />
+	<infoitem key="UD_LiveData_params" value="1" />
+	<infoitem key="UD_LiveData_param0" value="recordID=1" />
+</info>

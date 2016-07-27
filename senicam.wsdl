@@ -1,0 +1,155 @@
+<?xml version ='1.0' encoding ='UTF-8' ?> 
+<definitions name='Senicam' 
+	targetNamespace='http://example.org/catalog' 
+  	xmlns:tns='http://example.org/catalog' 
+  	xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/' 
+  	xmlns:xsd='http://www.w3.org/2001/XMLSchema' 
+  	xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/' 
+  	xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/' 
+  	xmlns='http://schemas.xmlsoap.org/wsdl/'>
+
+	<message name='getSenicamRequest'> 
+		<part name='OrderProductID' type='xsd:string'/>
+		<part name='ProductID' type='xsd:string'/>
+		<part name='tableType' type='xsd:string'/>
+	</message> 
+	<message name='getSenicamResponse'> 
+  		<part name='Result' type='xsd:string'/> 
+	</message> 
+
+	<message name='delSenicamRequest'> 
+		<part name='OrderProductID' type='xsd:string'/>
+		<part name='ProductID' type='xsd:string'/>
+		<part name='tableType' type='xsd:string'/>
+	</message> 
+	<message name='delSenicamResponse'> 
+  		<part name='Result' type='xsd:string'/> 
+		</message>
+
+	<message name='addSenicamRequest'> 
+  		<part name='Company_Name' type='xsd:string'/> 
+  		<part name='Address' type='xsd:string'/> 
+  		<part name='Contact' type='xsd:string'/> 
+ 		<part name='Email' type='xsd:string'/> 
+  		<part name='OrderProductID' type='xsd:string'/> 
+  		<part name='Model_Name' type='xsd:string'/> 
+  		<part name='Storage' type='xsd:string'/> 
+  		<part name='Color' type='xsd:string'/>
+		<part name='Quantity' type='xsd:string'/>
+		<part name='Price_Selling' type='xsd:string'/>
+		<part name='tableType' type='xsd:string'/>
+	</message> 
+	<message name='addSenicamResponse'> 
+ 		 <part name='Respone' type='xsd:string'/> 
+	</message>
+
+	<message name='editSenicamRequest'> 
+  		<part name='Company_Name' type='xsd:string'/> 
+  		<part name='Address' type='xsd:string'/> 
+  		<part name='Contact' type='xsd:string'/> 
+ 		<part name='Email' type='xsd:string'/> 
+  		<part name='OrderProductID' type='xsd:string'/> 
+  		<part name='Model_Name' type='xsd:string'/> 
+  		<part name='Storage' type='xsd:string'/> 
+  		<part name='Color' type='xsd:string'/>
+		<part name='Quantity' type='xsd:string'/>
+		<part name='Price_Selling' type='xsd:string'/>
+		<part name='tableType' type='xsd:string'/>
+	</message> 
+	<message name='editSenicamResponse'> 
+  		<part name='Respone' type='xsd:string'/> 
+	</message>
+
+	<portType name='SenicamPortType'> 
+  		<operation name='getSenicamEntry'> 
+   			<input message='tns:getSenicamRequest'/> 
+    			<output message='tns:getSenicamResponse'/> 
+  		</operation> 
+	
+		<operation name='delSenicamEntry'> 
+    			<input message='tns:delSenicamRequest'/> 
+    			<output message='tns:delSenicamResponse'/> 
+  		</operation> 
+	
+		<operation name='addSenicamEntry'> 
+   			<input message='tns:addSenicamRequest'/> 
+    			<output message='tns:addSenicamResponse'/> 
+  		</operation> 	
+
+		<operation name='editSenicamEntry'> 
+    			<input message='tns:editSenicamRequest'/> 
+   			<output message='tns:editSenicamResponse'/> 
+  		</operation> 
+	
+	</portType>		 
+
+	<binding name='SenicamBinding' type= 'tns:SenicamPortType'> 
+ 		<soap:binding style='rpc' transport='http://schemas.xmlsoap.org/soap/http' /> 
+  		<operation name='getSenicamEntry'> 
+			<soap:operation soapAction='urn:localhost-orderproduct#getSenicamEntry'/> 
+			<soap:operation soapAction='urn:localhost-product#getSenicamEntry'/> 
+
+    				<input> 
+					<soap:body use='encoded' namespace='urn:localhost-orderproduct' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+					<soap:body use='encoded' namespace='urn:localhost-product' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+					
+   	 			</input> 
+   		 		<output> 
+					<soap:body use='encoded' namespace='urn:localhost-orderproduct' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+					<soap:body use='encoded' namespace='urn:localhost-product' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+					
+    				</output> 
+  		</operation> 
+	
+  			<operation name='delSenicamEntry'> 
+			<soap:operation soapAction='urn:localhost-orderproduct#delSenicamEntry'/>
+			<soap:operation soapAction='urn:localhost-product#delSenicamEntry'/> 
+			
+   				<input> 
+					<soap:body use='encoded' namespace='urn:localhost-orderproduct' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+					<soap:body use='encoded' namespace='urn:localhost-product' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+    				</input> 
+    				<output> 
+					<soap:body use='encoded' namespace='urn:localhost-orderproduct' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/> 
+					<soap:body use='encoded' namespace='urn:localhost-product' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/> 
+    				</output> 
+  		</operation> 	
+	
+  		<operation name='addSenicamEntry'> 
+				<soap:operation soapAction='urn:localhost-orderproduct#addSenicamEntry'/>
+				<soap:operation soapAction='urn:localhost-product#addSenicamEntry'/>
+				
+    				<input> 
+					<soap:body use='encoded' namespace='urn:localhost-orderproduct' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+					<soap:body use='encoded' namespace='urn:localhost-product' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+				
+    				</input> 
+    				<output>
+					<soap:body use='encoded' namespace='urn:localhost-orderproduct' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/> 
+					<soap:body use='encoded' namespace='urn:localhost-product' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>  
+    				</output> 
+  		</operation> 		
+
+  		<operation name='editSenicamEntry'> 
+			<soap:operation soapAction='urn:localhost-orderproduct#editSenicamEntry'/> 
+			<soap:operation soapAction='urn:localhost-product#editSenicamEntry'/> 
+			 
+    				<input> 
+					<soap:body use='encoded' namespace='urn:localhost-orderproduct' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+					<soap:body use='encoded' namespace='urn:localhost-product' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+					
+    				</input> 
+    				<output> 
+					<soap:body use='encoded' namespace='urn:localhost-orderproduct' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/> 
+					<soap:body use='encoded' namespace='urn:localhost-product' encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/> 
+				
+    				</output> 
+  		</operation> 		
+	</binding> 
+
+	<service name='SenicamService'> 
+  		<port name='SenicamPort' binding='SenicamBinding'> 
+    			<soap:address location='http://localhost/Web_Service/senicamserver.php'/> 
+  		</port> 
+	</service>
+</definitions>

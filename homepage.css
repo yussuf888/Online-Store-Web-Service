@@ -1,0 +1,345 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+.background {
+	font-size: 18px;
+	background-color: #FFF;
+}
+.footerfontname {
+	font-size: 15px;
+	font-weight: lighter;
+	font-style: inherit;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+body,td,th {
+	font-size: 20px;
+	font-weight: 800;
+	color: #333333;
+	text-align: left;
+}
+.button_cart {
+	font-size: 22px;
+	background-color: #5D5D5D;
+	color: #FFFFFF;
+	font-weight: 900;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border: none;
+	height: 50px;
+	width: 150px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
+	border-radius: 100px 100px;
+}
+.box_qty {
+	font-size: 18px;
+	width: 40px;
+	height: 30px;
+	font-weight: 800;
+	color: #FFFFFF;
+	background-color: #404040;
+	border: none;
+	text-align: center;
+}
+
+body {
+	background-repeat: repeat;
+	background-color: #FFF;
+}
+
+#loginbox {
+	width: 600px;
+	height: 300px;
+	margin: auto;
+	padding: auto;
+	background-color: #4A96AD;
+	font-family: 'Lato', sans-serif;
+	box-shadow: 10px 10px 130px #888888;
+	font-size: 36px;
+	border-radius: 100px 100px;
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-ms-transition: all 2s;
+	-o-transition: all 2s;
+	transition: all 2s;
+	
+}
+
+#box {
+	height: auto;
+	width: 900px;
+	margin: auto;
+	padding: auto;
+}
+#title {
+	height: auto;
+	width: 900px;
+	margin: auto;
+	padding: auto;
+	font-size: 80px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #7D1935;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	
+	
+}
+.button_function {
+	background-color: #5D5D5D;
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFFFFF;
+	height: 50px;
+	width: 150px;
+	border: none;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
+	border-radius: 100px 100px;
+}
+
+#logo {
+	background-color: #eee;
+	height: auto;
+	width: 900px;
+	margin: auto;
+	padding: auto;
+	margin-top: 0px;
+}
+
+.Login_header {
+	font-weight: 900;
+	color: #666666;
+	font-size: 60px;
+}
+.Header_Login {
+	font-size: 60px;
+	font-weight: 600;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #FFFFFF;
+}
+.textfield_Login {
+	height: 50px;
+	width: 300px;
+	margin: auto;
+	padding: auto;
+	box-shadow: 5px 5px 5px #888888;
+	border-radius: 100px 100px;
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+	box-decoration-break: 0px;
+	font-size: 24px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	border: none;
+}
+.button {
+}
+.button_login {
+	height: 50px;
+	width: 100px;
+	left: 630px;
+	top: 402px;
+	margin: auto;
+	padding: auto;
+	border-radius: 100px 100px;
+	font-weight: 900;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color: #4A96AD;
+	border: none;
+	cursor: pointer;
+}
+.background #box #loginbox #form1 p {
+	font-size: 9px;
+}
+.textfield_Login:active {
+	height: 50px;
+	border: none;
+}
+.fail_login {
+	font-size: 42px;
+	color: #000000;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.loginfailheader {
+	font-size: 72px;
+	font-family: 'Kaushan Script', cursive;
+}
+.title_i {
+	color: #5d5d5d;
+}
+#loginbox:hover {
+	background-color: #A2AB58;
+	color: #000000;
+}
+.Product_h1 {
+	font-size: 24px;
+	background-color: #5d5d5d;
+	color: #FFFFFF;
+	border-radius: 100px 100px;
+	text-decoration: none;
+	width:200px;
+}
+.ordertotal {
+	text-indent: 630px;
+
+
+}
+footer {
+	width: 60%;
+  /* The mask-image gives us some extra fading. It is not necessary but without this, you can't face out the box-shadows. This clips our menu */
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  /* Using padding instead of margin for the top and bottom here will keep our box-shadow visible and not affected by the mask-image */
+  padding: 75px 0;
+  border-radius: 100px 100px;
+}
+footer ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+footer ul li {
+  display: inline-block;
+}
+footer ul li a {
+  padding: 20px;
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+}
+footer ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+#footer {
+	width: 60%;
+  /* The mask-image gives us some extra fading. It is not necessary but without this, you can't face out the box-shadows. This clips our menu */
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  /* Using padding instead of margin for the top and bottom here will keep our box-shadow visible and not affected by the mask-image */
+  padding: 75px 0;
+  border-radius: 100px 100px;
+}
+#footer ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+#footer ul li {
+  display: inline-block;
+}
+#footer ul li a {
+  padding: 20px;
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+}
+#footer ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+.product_button {
+	background-color: ;
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFFFFF;
+	height: 40px;
+	width: 169px;
+	border: none;
+	border-radius: 100px 100px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in 0s;
+	-moz-transition: all 0.5s ease-in 0s;
+	-ms-transition: all 0.5s ease-in 0s;
+	-o-transition: all 0.5s ease-in 0s;
+	transition: all 0.5s ease-in 0s;
+}
+.background_product {
+	font-family: 'Raleway', sans-serif;
+}
+.php_product {
+	font-size: 18px;
+}
+.button_cart:hover {
+	background-color: #333333;
+}
+.button_function:hover {
+	background-color: #333333;
+}
+.button_function:indeterminate {
+	background-color: #333333;
+}
+.emptycart {
+
+}
+.productcart {
+	color: #000000;
+}
+.checkout_table {
+	background-color: #999999;
+}
+.box_checkout {
+	background-color: #999999;
+}
+.checkout_php {
+	color: #000000;
+}
+.checkout_titleorder {
+	font-size: 24px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: #000000;
+}
+
+.orderplacedstyle {
+	color: #FFFFFF;
+	font-size: 34px;
+}
+.ordertitle {
+	font-size: 27px;
+}
+.orderplacedstylemain {
+	font-size: 50px;
+}
+.boldorder {
+	font-weight: 900;
+}
+.lighfontorder {
+	font-weight: lighter;
+	font-size: 18px;
+}
+.product_button:hover {
+	background-color: #000000;
+}
+.footerstyle {
+	font-size: 50px;
+}
+.stylelightfooter {
+	font-size: 14px;
+	font-weight: lighter;
+}
