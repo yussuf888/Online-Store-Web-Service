@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `orderproduct` (
 --
 
 INSERT INTO `orderproduct` (`OrderProductID`, `Model_Name`, `Storage`, `Color`, `Quantity`, `Price_Selling`, `Company_Name`, `Address`, `Contact`, `Email`) VALUES
-(1, 'iPhone 6', '16GB', 'Black', 4, 2545, 'Gazelle Store', 'Taman Pakatan', '016 2890746', 'yussuf888@gmail.com');
+(1, 'iPhone 6', '16GB', 'Black', 4, 2545, 'Charu Store', 'Taman Pakatan', '016 2890746', 'yussuf888@gmail.com');
 
 -- --------------------------------------------------------
 
